@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center; text-decoration: underline;">Betting Card Game</h1>
+        <div id="message">Rules : Select either Hi or Low for the next card. Guess the value of the down facing card vs
+            the up facing card. Place your bet depending on how confident you are about your choice of high or low on
+            the next card.
+        </div>
+        
+        <div id="score">
+            <div>Total $<span id="dollars">100</span><br>
+            Bet Amount
+            <input type="number" id="myBet" value="0" min="1" max="100" onchange="checkMe()" onblur="checkMe()">
+        </div>
+
+        </div>
+        <div id="cards"></div>
+        <div id="highLow">
+            <button class="btn" id="btnhigh" type="button" onclick="hilo('high')" class="btn">
+                High
+            </button>
+            <button class="btn" id="btnlow" type="button" onclick="hilo('low')" class="btn">
+                Low
+            </button>
+        </div>
+        <div id="start">
+            <button class="btn" id="btnstart" type="button" onclick="gameStart()" class="btn">
+                Start Game
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+
+</html>

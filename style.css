@@ -1,0 +1,117 @@
+#start {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#highLow,
+#score {
+    display: none;
+}
+.btn{
+    border-radius: 5px;
+    padding: 9px 20px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-shadow:1px 1px #000000;
+}
+#btnstart{
+    background-color: black;
+
+}
+#btnhigh{
+    background-color: red;
+    
+}
+#btnlow{
+    background-color: blue;            
+}
+#dollars, #msgin{
+    font-size: 2.5em;
+
+}
+#message{
+    text-align: center;
+}
+.icard {
+    padding: 10px;
+    border: 1px solid #ddd;
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 14px;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    left:30px;
+}
+
+#cards {
+    margin-top: 30px;
+    height: 240px;
+    margin-left: 30px;
+}
+
+.hearts .suit::after {
+    content: '\2665';
+    position: relative;
+    left: 2px;
+}
+
+.spades .suit::after {
+    content: '\2660';
+    position: relative;
+    left: 2px;
+}
+
+.clubs .suit::after {
+    content: '\2663';
+    position: relative;
+    left: 2px;
+}
+
+.diams .suit::after {
+    content: '\2666';
+    position: relative;
+    left:2px;
+}
+
+.spades,
+.clubs {
+    color: black;
+}
+
+.hearts,
+.diams {
+    color: red;
+}
+
+.cardtop {
+    font-size: 2em;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    line-height: 0.7em;
+}
+
+.cardmid {
+    text-align: center;
+    font-size: 6em;
+    position: absolute;
+    top: 44px;
+    left: 46px;
+}
+
+.cardbottom {
+    line-height: 0.7em;
+    font-size: 2em;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+
+}
